@@ -6,11 +6,11 @@
 /*   By: moajili <moajili@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 02:46:25 by moajili           #+#    #+#             */
-/*   Updated: 2023/11/03 14:30:13 by moajili          ###   ########.fr       */
+/*   Updated: 2023/11/30 11:46:45 by moajili          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(char *s1, char *s2, int n)
+int	ft_strncmp(const char *s1, const char *s2, int n)
 {
 	int	i;
 

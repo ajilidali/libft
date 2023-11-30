@@ -6,7 +6,7 @@
 /*   By: moajili <moajili@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 11:24:30 by moajili           #+#    #+#             */
-/*   Updated: 2023/11/03 16:59:24 by moajili          ###   ########.fr       */
+/*   Updated: 2023/11/30 12:05:13 by moajili          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ size_t				ft_strlcpy(char *dst, const char *src, size_t size);
 size_t				ft_strlcat(char *s1, const char *s2, size_t n);
 char				*ft_strchr(const char *string, int searchedChar);
 char				*ft_strnstr(const char *big, const char *lit, size_t len);
-int					ft_strncmp(char *s1, char *s2, int n);
+int					ft_strncmp(const char *s1, const char *s2, int n);
 void				ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putchar_fd(char c, int fd);
