@@ -6,7 +6,7 @@
 /*   By: moajili <moajili@student.42mulhouse.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 11:24:30 by moajili           #+#    #+#             */
-/*   Updated: 2024/01/24 13:31:21 by moajili          ###   ########.fr       */
+/*   Updated: 2024/01/29 10:14:42 by moajili          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,10 @@
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
 
 typedef struct s_list
 {
@@ -30,6 +34,7 @@ int					ft_memcmp(const void *pointer1, const void *pointer2,
 void				ft_bzero(void *s, size_t n);
 void				*ft_memchr(const void *memoryBlock, int searchedChar,
 						size_t size);
+char				*ft_ustrjoin(char  *s1, char  *s2);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 int					ft_strlen(const char *c);
@@ -65,6 +70,8 @@ void				ft_lstadd_back(t_list **lst, t_list *new);
 void				ft_lstdelone(t_list *lst, void (*del)(void *));
 void				ft_lstclear(t_list **lst, void (*del)(void *));
 void				ft_lstiter(t_list *lst, void (*f)(void *));
+char	*get_next_line(int fd);char	*get_next_line(int fd);
+
 t_list				*ft_lstmap(t_list *lst, void *(*f)(void *), \
 void (*del)(void *));
 

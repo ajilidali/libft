@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: moajili <moajili@student.42.fr>            +#+  +:+       +#+        */
+/*   By: moajili <moajili@student.42mulhouse.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 02:46:44 by moajili           #+#    #+#             */
-/*   Updated: 2023/11/03 14:33:21 by moajili          ###   ########.fr       */
+/*   Updated: 2024/01/29 10:35:47 by moajili          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	*ft_memchr(const void *memoryBlock, int searchedChar, size_t size)
 {
 	unsigned int	i;
 
+	if (memoryBlock == NULL)
+		return (NULL);
 	i = 0;
 	while (i < size)
 	{
