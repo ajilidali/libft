@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: moajili <moajili@student.42.fr>            +#+  +:+       +#+        */
+/*   By: moajili <moajili@student.42mulhouse.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 11:24:30 by moajili           #+#    #+#             */
-/*   Updated: 2023/11/30 12:05:13 by moajili          ###   ########.fr       */
+/*   Updated: 2024/01/24 13:31:21 by moajili          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int					ft_isascii(int c);
 void				*ft_calloc(size_t count, size_t size);
 int					ft_isalpha(int c);
 char				*ft_strtrim(char const *s1, char const *set);
-char				*ft_strjoin(char const *s1, char const *s2);
+char				*ft_strjoin(char  *s1, char  *s2);
 int					ft_isalnum(int c);
 int					ft_toupper(int c);
 int					ft_tolower(int c);

@@ -3,19 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: moajili <moajili@student.42.fr>            +#+  +:+       +#+        */
+/*   By: moajili <moajili@student.42mulhouse.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 22:39:41 by moajili           #+#    #+#             */
-/*   Updated: 2023/10/25 15:24:24 by moajili          ###   ########.fr       */
+/*   Updated: 2024/01/24 13:28:28 by moajili          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(const char *c)
+int	ft_strlen(const char *str)
 {
 	int	i;
 
 	i = 0;
-	while (c[i])
+	if (!str)
+		return (0);
+	while (str[i])
 		i++;
 	return (i);
 }
